@@ -1,10 +1,6 @@
 # Fail on any command.
 set -eux pipefail
 
-# Install ZSH
-sudo pacman -S git zsh curl
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # Install plug-ins (you can git-pull to update them later).
 (cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-syntax-highlighting)
 (cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-autosuggestions)
